@@ -186,7 +186,7 @@ element.style {
                 </div>
                 @endif
             <div class="col--m8 col--l9">
-                <form class="ver-form" role="form" method="POST" enctype="multipart/form-data" action="/pweb/galangdana/public/user/{{ Auth::user()->id }}/verifikasi">
+                <form class="ver-form" role="form" method="POST" enctype="multipart/form-data" action="/user/{{ Auth::user()->id }}/verifikasi">
                 {{ csrf_field() }}
                     <div class="form__row">
                         <div class="col">
@@ -240,7 +240,7 @@ element.style {
                             <!--button type="submit" class="btn btn--blue btn--large btn--border" onclick="ga('send', 'event', 'dashboard.setting.get-verified.button-submit', 'click', 'dashboard.setting.get-verified.button-submit');">Simpan</button-->
                             <button type="submit" class="btn btn--blue btn--large btn--border">Simpan</button>
                         </div>
-                    </div>   
+                    </div>
                 </form>
                 @else
         <div class="alert alert-success">

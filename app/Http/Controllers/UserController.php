@@ -18,7 +18,7 @@ class UserController extends Controller
 	public function update(Request $request, user $u){
 		$users = User::findOrFail($u)->first();
 		$users->update($request->all());
-		return redirect("/user/$users->id/profil");
+		return view('user', compact('user'));
 	}
 
 	public function imageUpload(Request $request, user $u){
@@ -27,11 +27,11 @@ class UserController extends Controller
 		$user = User::find($u)->first();
 	    $user->foto_user = $contents;
 	    $user->save();
-	    return redirect("/user/$user->id/profil");
+	    return view('user', compact('user'));
 	}
 
 	public function transaksi(user $u){
-		$users = $u->transaksi()->paginate(25);	
+		$users = $u->transaksi()->paginate(25);
 		echo "masuk";
 		return view('donasisaya', compact('users'));
 	}
@@ -46,6 +46,7 @@ class UserController extends Controller
 		$u->foto_verifikasi = $foto_diri;
 		$u->nomor_hp = $request->nomor_hp;
 		$u->save();
+		return view('user', compact('u'));
 	}
 
 	public function campaign (user $u){
