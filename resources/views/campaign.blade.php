@@ -1,6 +1,6 @@
 @extends('app')
 @section('title')
-    TCare! Peduli Sesama
+    GalangDana! Peduli Sesama
 @endsection
 @section('content')
 <div class="container" style="margin-top: 100px ;margin-bottom: 200px">

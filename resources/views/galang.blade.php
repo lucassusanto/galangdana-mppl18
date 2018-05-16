@@ -1,6 +1,6 @@
 @extends('app')
 @section('title')
-TCare! Peduli Sesama
+GalangDana! Peduli Sesama
 @endsection
 @section('content')
 <header>
@@ -616,7 +616,7 @@ textarea {
    </div>
     <div id="termsCheckCampaigner" class="box">
         <input class="active" type="checkbox" checked required autofocus>
-      <p>Saya setuju dengan <a href="#" target="_blank">Syarat & Ketentuan Campaign</a> di TCare.com, termasuk <a href="https://kitabisa.com/faq">biaya administrasi platform</a> sebesar 5% dari total donasi online yang terkumpul.</p>
+      <p>Saya setuju dengan <a href="#" target="_blank">Syarat & Ketentuan Campaign</a> di GalangDana.com, termasuk <a href="https://kitabisa.com/faq">biaya administrasi platform</a> sebesar 5% dari total donasi online yang terkumpul.</p>
     </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
