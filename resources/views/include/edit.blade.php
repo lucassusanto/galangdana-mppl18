@@ -25,13 +25,16 @@
     <div class="col-md-12" style="margin-top: 15px">
         <a href="{{ url('/user/'.Auth::user()->id.'/profil') }}"><button type="button" class="btn btn-primary" style="width: 100%">Edit Profile</button></a>
     </div>
-     <div class="col-md-12">
+     <div class="col-md-12" style="margin-top: 15px">
         <a href="{{ url('/user/'.Auth::user()->id.'/campaign') }}"><button type="button" class="btn btn-primary" style="width: 100%">Campaign Saya</button></a>
     </div>
-     <div class="col-md-12">
+     <div class="col-md-12" style="margin-top: 15px">
         <a href="{{url ('/user/'.Auth::user()->id.'/transaksi') }}"><button type="button" class="btn btn-primary" style="width: 100%">Donasi Saya</button></a>
     </div>
-     <div class="col-md-12">
+     <div class="col-md-12" style="margin-top: 15px">
         <a href="{{ url('/user/'.Auth::user()->id.'/verifikasi') }}"><button type="button" class="btn btn-primary" style="width: 100%">Verifikasi Akun</button></a>
+     </div>
+    <div class="col-md-12" style="margin-top: 15px">
+        <a href="{{ url('/user/'.Auth::user()->id.'/achievement') }}"><button type="button" class="btn btn-primary" style="width: 100%">Achievement</button></a>
     </div>
 </div>
