@@ -53,5 +53,15 @@ class UserController extends Controller
 		$users = $u->kegiatan()->paginate(2);
         return view('campaign', compact('users'));
 	}
+
+	public function achievement(user $u)
+    {
+        $sumTransaksi = DB::table('transaksis')->where('id_user', $u->id)->sum('jumlah_donasi');
+
+//        dd(compact('sumTransaksi'));
+
+        return view('achievement')->with('sumTransaksi', $sumTransaksi);
+//        return view('achievement', compact('sumTransaksi'));
+    }
 }
 

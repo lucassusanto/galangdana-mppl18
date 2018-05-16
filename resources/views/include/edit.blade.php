@@ -35,6 +35,6 @@
         <a href="{{ url('/user/'.Auth::user()->id.'/verifikasi') }}"><button type="button" class="btn btn-primary" style="width: 100%">Verifikasi Akun</button></a>
      </div>
     <div class="col-md-12" style="margin-top: 15px">
-        <a href="{{ url('/user/'.Auth::user()->id.'/verifikasi') }}"><button type="button" class="btn btn-primary" style="width: 100%">Achievement</button></a>
+        <a href="{{ url('/user/'.Auth::user()->id.'/achievement') }}"><button type="button" class="btn btn-primary" style="width: 100%">Achievement</button></a>
     </div>
 </div>

@@ -42,6 +42,7 @@ Route::get('/user/{u}/profil', 'UserController@edit');
 Route::post('/user/{u}/update', 'UserController@update');
 Route::post('/user/{u}/image','UserController@imageUpload');
 Route::get('/user/{u}/transaksi', 'UserController@transaksi');
+Route::get('/user/{u}/achievement', 'UserController@achievement');
 Route::get('/user/{u}/verifikasi', function(){
 	return view('verifikasiakun');
 });
