@@ -10,7 +10,9 @@
     <hr>
     <div class="row">
     <!-- left column -->
-        @include('include.edit')
+
+        @include('include.edit', ['passedUserId' => substr(Request::path(),5,1)])
+
         @if(Auth::user()['id']==substr(Request::path(),5,1))
         <div class="col-md-9 personal-info">
             <h3>Info Profile</h3>

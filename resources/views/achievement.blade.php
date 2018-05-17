@@ -19,7 +19,7 @@
         </h3>
         <hr>
         <div class="row">
-            @include('include.edit')
+            @include('include.edit', ['passedUserId' => substr(Request::path(),5,1)])
             <div class="col-md-9 personal-info">
                 <div class="row">
                     <div class="col-md-3" style="text-align: left; padding-left: 46px; font-weight: bold; color: #cd7f32">Bronze</div>
