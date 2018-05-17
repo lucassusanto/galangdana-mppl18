@@ -52,7 +52,7 @@ class UserController extends Controller
 
 	public function campaign (user $u){
 		$users = $u->kegiatan()->paginate(2);
-    return view('donasisaya')->with('users',$users)->with('u',$u);
+    return view('campaign')->with('users',$users)->with('u',$u);
         // return view('campaign', compact('users'));
 	}
 
