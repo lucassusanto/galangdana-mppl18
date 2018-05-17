@@ -45,6 +45,10 @@ class UserController extends Controller
 		// return view('donasisaya', compact('users'));
 	}
 
+	public function view_verifikasi(user $u){
+		return view('verifikasiakun');
+	}
+
 	public function verifikasi(Request $request, user $u){
 		$file = $request->file('ktp');
 		$ktp = $file->openFile()->fread($file->getSize());

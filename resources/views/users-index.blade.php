@@ -35,7 +35,7 @@
         <br><br>
         <div class="row" style="padding-left: 55px; font-size:15px;">
             @foreach($users as $user)
-            <a href="/user/{{$user->id}}/profil">
+            <a href="user/{{$user->id}}/profil">
                 <div class="col-md-3 member-card">{{$user->name}}</div>
             </a>
             @endforeach

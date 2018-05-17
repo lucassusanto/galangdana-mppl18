@@ -62,24 +62,18 @@ class KegiatanController extends Controller
      * @param  \App\kegiatan  $kegiatan
      * @return \Illuminate\Http\Response
      */
-    public function show(kegiatan $u)
-    {
-
+    public function show(kegiatan $u) {
         $kegiatan=$u;
-        return  view('donasi.jumlah',compact('kegiatan'));
-        
+        return  view('donasi.jumlah',compact('kegiatan'));   
     }
 
 
-    public function show2(kegiatan $u)
-    {
-
-        $kegiatan=$u;
-        return  view('donasi.bayardonasi',compact('kegiatan'));
-        
+    public function show2(kegiatan $u) {
+        $kegiatan = $u;
+        return view('donasi.bayardonasi',compact('kegiatan'));   
     }
 
-    public function verifikasicair(kegiatan $u){
+    public function verifikasicair(kegiatan $u) {
         $kegiatan = $u;
         return view('donasi.verifikasicair', compact('kegiatan'));
     }
@@ -91,8 +85,7 @@ class KegiatanController extends Controller
      * @param  \App\kegiatan  $kegiatan
      * @return \Illuminate\Http\Response
      */
-    public function edit(kegiatan $u)
-    {
+    public function edit(kegiatan $u) {
      
     }
 

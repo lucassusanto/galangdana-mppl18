@@ -9,8 +9,6 @@ use App\User;
 use App\kegiatan;
 use App\transaksi;
 
-
-
 class AdminController extends Controller
 {
  	public function index(){
