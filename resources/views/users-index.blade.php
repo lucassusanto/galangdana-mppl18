@@ -30,7 +30,7 @@
         <h3 style="text-align: center">Orang - Orang Baik Penggalang Dana</h3>
         <br>
         <p style="text-align: center; padding-left: 100px; padding-right: 100px;">
-        Orang - orang baik yang telah menunjukan aksi nyata kepeduliannya kepada sesama melalui aplikasi GalangDana.
+        Orang-orang baik yang telah menunjukan aksi nyata kepeduliannya kepada sesama melalui aplikasi GalangDana.
         </p>
         <br><br>
         <div class="row" style="padding-left: 55px; font-size:15px;">

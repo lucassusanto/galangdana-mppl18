@@ -32,9 +32,7 @@ Route::get('/galang', function () {
 });
 
 Route::get('/users', 'UserController@index');
-Route::get('/user', function () {
-    return view('user');
-});
+
 Route::post('/galang/{u}/upload'	, 'KegiatanController@store');
 Route::get('/transaksi/{u}/delete'	, 'TransaksiController@destroy');
 
@@ -45,6 +43,7 @@ Route::get('/verifikasi', function () {
 
 Route::get('cariuser', 		'AdminController@search');
 Route::get('caricampaign', 	'AdminController@searchCampaign');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout', function(){
