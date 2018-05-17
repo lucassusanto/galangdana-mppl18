@@ -10,6 +10,13 @@ use App\kegiatan;
 use App\campaign;
 class UserController extends Controller
 {
+    public function index()
+    {
+        $users = DB::table('users')->where('tipe_user', '!=', 2)->get();
+//        dd($users);
+        return view('users-index', compact('users'));
+    }
+
     public function edit(user $u){
     	$users = User::findOrFail($u);
     	return view('user', compact('users'));

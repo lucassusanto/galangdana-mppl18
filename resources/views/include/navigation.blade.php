@@ -53,12 +53,9 @@
                                     <!-- Collect the nav links, forms, and other content for toggling -->
                                     <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
                                         <ul class="nav navbar-nav navbar-right">
-
-
-                                            
-
                                             <li><a href="{{ url('/termgalang') }}">Galang Dana</a></li>
                                             <li><a href="{{ url('/donasi') }}">Donasi</a></li>
+                                            <li><a href="{{ url('/users')  }}">Temui Orang Baik</a></li>
                                             <li class="dropdown">
                                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                                     <span class="glyphicon glyphicon-menu-hamburger"></span>

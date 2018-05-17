@@ -37,7 +37,7 @@
         <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-        
+        @yield('additional-style')
     </head>
     <body class="no-trans">
         @include('include.navigation')
