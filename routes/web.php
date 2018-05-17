@@ -38,6 +38,7 @@ Route::get('/galang', function () {
 Route::get('/verifikasi', function () {
     return view('verifikasiakun');
 });
+Route::get('/users', 'UserController@index');
 Route::get('/user/{u}/profil', 'UserController@edit');
 Route::post('/user/{u}/update', 'UserController@update');
 Route::post('/user/{u}/image','UserController@imageUpload');
