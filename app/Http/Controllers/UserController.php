@@ -19,6 +19,7 @@ class UserController extends Controller
 
     public function edit(user $u){
     	$users = User::findOrFail($u);
+
     	return view('user', compact('users'));
     }
 

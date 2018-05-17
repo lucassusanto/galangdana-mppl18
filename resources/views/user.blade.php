@@ -11,6 +11,7 @@
     <div class="row">
     <!-- left column -->
         @include('include.edit')
+        @if(Auth::user()['id']==substr(Request::path(),5,1))
         <div class="col-md-9 personal-info">
             <h3>Info Profile</h3>
             <form class="form-horizontal" role="form" method="POST" action="{{ url('/user/'.Auth::user()->id.'/update') }}">
@@ -85,6 +86,18 @@
                 </div>
             </div>
         </div>
+        @else
+            @foreach($users as $user)
+                <h3>Info Profile</h3>
+                <br><br>
+                <div class="row">
+                    <p style="padding-left: 500px;">Nama orang baik : <strong>{{$user->name}}</strong></p>
+                    <p style="padding-left: 500px;">Email : <strong>{{$user->email}}</strong></p>
+                    <p style="padding-left: 500px;">Tanggal Lahir : <strong>{{$user->tanggal_lahir}}</strong></p>
+                    <p style="padding-left: 500px;">Alamat : <strong>{{$user->alamat}}</strong></p>
+                </div>
+            @endforeach
+        @endif
     </div>
 </div>
 @endsection
