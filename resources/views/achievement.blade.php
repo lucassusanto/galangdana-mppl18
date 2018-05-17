@@ -6,7 +6,17 @@
 @section('content')
 
     <div class="container" style="margin-top: 100px ;margin-bottom: 200px">
-        <h3>Achievement (nama user)</h3>
+        <h3>
+            @if($sumTransaksi>6500000)
+                Platinum Member
+            @elseif($sumTransaksi>4500000)
+                Gold Member
+            @elseif($sumTransaksi>2500000)
+                Silver Member
+            @elseif($sumTransaksi>500000)
+                Bronze Member
+            @endif
+        </h3>
         <hr>
         <div class="row">
             @include('include.edit')
