@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
             'alamat' => 'ITS',
             'password' => $adminPass,
             'tanggal_lahir' => '1997-08-17',
-            'tipe_user' => 1
+            'tipe_user' => 2
         ];
 
         User::create($params);
@@ -32,7 +32,7 @@ class UserSeeder extends Seeder
             'alamat' => 'ITS',
             'password' => $adminPass,
             'tanggal_lahir' => '1997-08-17',
-            'tipe_user' => 0
+            'tipe_user' => 1
         ];
 
         User::create($params);
