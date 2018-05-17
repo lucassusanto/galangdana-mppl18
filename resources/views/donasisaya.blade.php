@@ -4,14 +4,22 @@
 @endsection
 @section('content')
 <div class="container" style="margin-top: 100px ;margin-bottom: 200px">
-	<h1>Donasi Saya</h1><hr>
+	<h1>
+		@if(Auth::user()['id']==substr(Request::path(),5,1))
+				Histori Donasi Saya
+		@else
+				Histori Donasi {{$u->name}}
+		@endif
+	</h1><hr>
     <div class="row">
     	<!-- left column -->
-        @include('include.edit')	
+        @include('include.edit')
         <div class="col-md-9 personal-info">
 			<div class="panel panel-default">
 				<div class="panel-body">
-					<h4><i class=""></i> Daftar Donasi Saya</h4><hr>
+					<h4><i class=""></i>
+							Histori Donasi
+					</h4><hr>
 					@if($users->count())
 					<div class="table-responsive">
 						<table class="table table-bordered table-striped table-hover table-condensed tfix">

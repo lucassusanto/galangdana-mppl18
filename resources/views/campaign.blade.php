@@ -4,10 +4,16 @@
 @endsection
 @section('content')
 <div class="container" style="margin-top: 100px ;margin-bottom: 200px">
-	<h1>Campaign saya</h1><hr>
+	<h1>
+		@if(Auth::user()['id']==substr(Request::path(),5,1))
+				Campaign Saya
+		@else
+				Campaign {{$u->name}}
+		@endif
+	</h1><hr>
     <div class="row">
     	<!-- left column -->
-        @include('include.edit')	
+        @include('include.edit')
         <div class="col-md-9 personal-info">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -19,7 +25,7 @@
 		<div class="col-xs-6 col-sm-4 col-lg-3">
 			<div class="thumbnail">
 				<!--<img src="http://placehold.it/350x180">-->
-				<?php 
+				<?php
 					$content = $k->foto_kegiatan;
                     echo '<img src="data:image/jpeg;base64,'.base64_encode($content).'"';
                     echo 'style="width: 100%; height: 130px"/>';

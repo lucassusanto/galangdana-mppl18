@@ -33,7 +33,8 @@ class UserController extends Controller
 	public function transaksi(user $u){
 		$users = $u->transaksi()->paginate(25);
 		echo "masuk";
-		return view('donasisaya', compact('users'));
+    return view('donasisaya')->with('users',$users)->with('u',$u);
+		// return view('donasisaya', compact('users'));
 	}
 
 	public function verifikasi(Request $request, user $u){
@@ -51,7 +52,8 @@ class UserController extends Controller
 
 	public function campaign (user $u){
 		$users = $u->kegiatan()->paginate(2);
-        return view('campaign', compact('users'));
+    return view('donasisaya')->with('users',$users)->with('u',$u);
+        // return view('campaign', compact('users'));
 	}
 
 	public function achievement(user $u)
