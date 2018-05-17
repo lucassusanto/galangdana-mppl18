@@ -30,18 +30,32 @@
         <a href="{{ url('/user/'.Auth::user()->id.'/profil') }}"><button type="button" class="btn btn-primary" style="width: 100%">Edit Profil</button></a>
     </div>
     @endif
+    @if(Auth::user()['id']==substr(Request::path(),5,1))
      <div class="col-md-12" style="margin-top: 15px">
         <a href="{{ url('/user/'.Auth::user()->id.'/campaign') }}"><button type="button" class="btn btn-primary" style="width: 100%">Kegiatan</button></a>
     </div>
+    @else
+        <div class="col-md-12" style="margin-top: 15px">
+            <a href="{{ url('/user/'.$passedUserId.'/campaign') }}"><button type="button" class="btn btn-primary" style="width: 100%">Kegiatan</button></a>
+        </div>
+    @endif
+    @if(Auth::user()['id']==substr(Request::path(),5,1))
      <div class="col-md-12" style="margin-top: 15px">
         <a href="{{url ('/user/'.Auth::user()->id.'/transaksi') }}"><button type="button" class="btn btn-primary" style="width: 100%">Donasi</button></a>
     </div>
+    @endif
     @if(Auth::user()['id']==substr(Request::path(),5,1))
      <div class="col-md-12" style="margin-top: 15px">
         <a href="{{ url('/user/'.Auth::user()->id.'/verifikasi') }}"><button type="button" class="btn btn-primary" style="width: 100%">Verifikasi Akun</button></a>
      </div>
     @endif
+    @if(Auth::user()['id']==substr(Request::path(),5,1))
     <div class="col-md-12" style="margin-top: 15px">
         <a href="{{ url('/user/'.Auth::user()->id.'/achievement') }}"><button type="button" class="btn btn-primary" style="width: 100%">Achievement</button></a>
     </div>
+    @else
+        <div class="col-md-12" style="margin-top: 15px">
+            <a href="{{ url('/user/'.$passedUserId.'/achievement') }}"><button type="button" class="btn btn-primary" style="width: 100%">Achievement</button></a>
+        </div>
+    @endif
 </div>
