@@ -1,6 +1,6 @@
 @extends('app')
 @section('title')
-    TCare! Peduli Sesama
+    GalangDana! Peduli Sesama
 @endsection
 
 @section('content')
@@ -58,7 +58,7 @@
                     } else
                         clearInterval(progress);
 
-                }, 100);
+                }, 10);
         });
     </script>
 @endsection

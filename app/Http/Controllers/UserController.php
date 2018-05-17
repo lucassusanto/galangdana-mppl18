@@ -58,7 +58,10 @@ class UserController extends Controller
 
 	public function achievement(user $u)
     {
-        $sumTransaksi = DB::table('transaksis')->where('id_user', $u->id)->sum('jumlah_donasi');
+        $sumTransaksi = DB::table('transaksis')
+                                    ->where('id_user', $u->id)
+                                    ->where('status_transaksis', 1)
+                                    ->sum('jumlah_donasi');
 
 //        dd(compact('sumTransaksi'));
 

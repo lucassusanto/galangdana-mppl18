@@ -1,6 +1,6 @@
 @extends('app')
 @section('title')
-    TCare.com
+    GalangDana.com
 @endsection
 
 
@@ -206,7 +206,7 @@ button, input, optgroup, select, textarea {
         </div>
         <div class="box" id="termsCheckDonation">
             <input class="active" type="checkbox" checked="checked">
-            <p>Saya<strong> mempercayai/mengenal campaigner </strong>ini<strong> </strong>dan <strong>setuju</strong> dengan <a href="" target="_blank">Syarat & Ketentuan Donasi</a> di TCare.com</p> 
+            <p>Saya<strong> mempercayai/mengenal campaigner </strong>ini<strong> </strong>dan <strong>setuju</strong> dengan <a href="" target="_blank">Syarat & Ketentuan Donasi</a> di GalangDana.com</p>
         </div>
     </div>
     <div class="form-action align-right">

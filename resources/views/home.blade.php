@@ -249,7 +249,7 @@
                                 <li><i class="fa fa-map-marker pr-10"></i>Teknik Informatika ITS, Surabaya</li>
                                 <li><i class="fa fa-phone pr-10"></i> +6281931066028</li>
                                 <li><i class="fa fa-fax pr-10"></i> +62317882176</li>
-                                <li><i class="fa fa-envelope-o pr-10"></i> tcarepedulisesama@gmail.com</li>
+                                <li><i class="fa fa-envelope-o pr-10"></i> GalangDanapedulisesama@gmail.com</li>
                             </ul>
                         </div>
                     </div>

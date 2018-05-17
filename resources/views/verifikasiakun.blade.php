@@ -1,6 +1,6 @@
 @extends('app')
 @section('title')
-    TCare! Peduli Sesama
+    GalangDana! Peduli Sesama
 @endsection
 
 
