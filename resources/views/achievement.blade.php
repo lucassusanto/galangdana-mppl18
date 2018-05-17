@@ -22,6 +22,12 @@
             @include('include.edit')
             <div class="col-md-9 personal-info">
                 <div class="row">
+                    <div class="col-md-3" style="text-align: left; padding-left: 46px; font-weight: bold; color: #cd7f32">Bronze</div>
+                    <div class="col-md-3" style="text-align: left; padding-left: 43px; font-weight: bold; color: #c0c0c0">Silver</div>
+                    <div class="col-md-3" style="text-align: left; padding-left: 46px;font-weight: bold; color: #FFD700;">Gold</div>
+                    <div class="col-md-3" style="text-align: left; padding-left: 33px;font-weight: bold; color: #9ac5db">Diamond</div>
+                </div>
+                <div class="row">
                     <div class="col-md-3" style="text-align: left; padding-left: 35px;">500.000,00</div>
                     <div class="col-md-3" style="text-align: left; padding-left: 20px;">2.500.000,00</div>
                     <div class="col-md-3" style="text-align: left; padding-left: 24px;">4.500.000,00</div>
@@ -35,10 +41,25 @@
                         </div>
                     </div>
                 </div>
+                <br><br>
                 <div class="row">
-                    <h3 style="text-align: center">Rp {{$sumTransaksi}},00</h3>
+                    <p style="text-align: center">total donasi terverifikasi sebesar</p>
+                    <h2 style="text-align: center">Rp {{$sumTransaksi}},00</h2>
+                </div>
+
+                <div class="row" style="margin-top: 2em;">
+                    <h4 style="font-weight: bold">Mengenai Achievement:</h4>
+                    <ol>
+                        <li>Sebuah bentuk apresiasi dari GalangDana kepada orang - orang baik yang mau peduli dan beraksi untuk masalah sosial yang ada</li>
+                        <li>Total donasi yang dihitung adalah donasi anda <strong>yang sudah diverifikasi oleh pembuat kegiatan</strong></li>
+                        <li>Achievement yang anda peroleh bedasarkan batas terbesar yang sudah anda lampaui</li>
+                        <li>Apabila anda telah melakukan <strong>donasi terverifikasi</strong> sebesar Rp 600.000,00, maka anda layak memperoleh <strong>Bronze</strong></li>
+                        <li>Apabila anda telah melakukan <strong>donasi terverifikasi</strong> sebesar Rp 3.000.000,00, maka anda layak memperoleh <strong>Silver</strong></li>
+                        <li>Apabila anda telah melakukan <strong>donasi terverifikasi</strong> sebesar Rp 10.000.000,00, maka anda layak memperoleh <strong>Diamond</strong> dan merchandise khusus dari GalangDana</li>
+                    </ol>
                 </div>
             </div>
+
         </div>
     </div>
 @endsection
