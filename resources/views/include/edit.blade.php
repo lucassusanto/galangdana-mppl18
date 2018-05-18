@@ -43,6 +43,10 @@
      <div class="col-md-12" style="margin-top: 15px">
         <a href="{{url ('/user/'.Auth::user()->id.'/transaksi') }}"><button type="button" class="btn btn-primary" style="width: 100%">Donasi</button></a>
     </div>
+        @else
+        <div class="col-md-12" style="margin-top: 15px">
+            <a href="{{url ('/user/'.$passedUserId.'/transaksi') }}"><button type="button" class="btn btn-primary" style="width: 100%">Donasi</button></a>
+        </div>
     @endif
     @if(Auth::user()['id']==substr(Request::path(),5,1))
      <div class="col-md-12" style="margin-top: 15px">

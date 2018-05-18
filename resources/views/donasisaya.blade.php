@@ -13,7 +13,7 @@
 	</h1><hr>
     <div class="row">
     	<!-- left column -->
-        @include('include.edit')
+		@include('include.edit', ['passedUserId' => substr(Request::path(),5,1)])
         <div class="col-md-9 personal-info">
 			<div class="panel panel-default">
 				<div class="panel-body">
