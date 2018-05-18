@@ -77,7 +77,7 @@ class UserController extends Controller
 
 //        dd(compact('sumTransaksi'));
 
-        return view('achievement')->with('sumTransaksi', $sumTransaksi);
+        return view('achievement')->with('sumTransaksi', $sumTransaksi)->with('u', $u);
 //        return view('achievement', compact('sumTransaksi'));
     }
 }

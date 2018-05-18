@@ -6,6 +6,7 @@
 @section('content')
 
     <div class="container" style="margin-top: 100px ;margin-bottom: 200px">
+        <h2>{{$u->name}}</h2>
         <h3>
             @if($sumTransaksi>6500000)
                 Platinum Member
@@ -15,6 +16,8 @@
                 Silver Member
             @elseif($sumTransaksi>500000)
                 Bronze Member
+            @else
+                Member Biasa
             @endif
         </h3>
         <hr>
