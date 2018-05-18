@@ -17,7 +17,11 @@
         <div class="col-md-9 personal-info">
 			<div class="panel panel-default">
 				<div class="panel-body">
-					<h4><i class=""></i>Daftar Campaign Saya</h4><hr>
+                    @if(Auth::user()['id']==substr(Request::path(),5,1))
+					    <h4><i class=""></i>Daftar Campaign Saya</h4><hr>
+                    @else
+                        <h4><i class=""></i>Daftar Campaign {{$u->name}}</h4><hr>
+                    @endif
 		@if($users->count())
 						<div class="flex-row row">
 						<?php $no =1 ?>
