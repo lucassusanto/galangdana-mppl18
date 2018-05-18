@@ -8,13 +8,13 @@
     <div class="container" style="margin-top: 100px ;margin-bottom: 200px">
         <h2>{{$u->name}}</h2>
         <h3>
-            @if($sumTransaksi>6500000)
+            @if($sumTransaksi>=6500000)
                 Platinum Member
-            @elseif($sumTransaksi>4500000)
+            @elseif($sumTransaksi>=4500000)
                 Gold Member
-            @elseif($sumTransaksi>2500000)
+            @elseif($sumTransaksi>=2500000)
                 Silver Member
-            @elseif($sumTransaksi>500000)
+            @elseif($sumTransaksi>=500000)
                 Bronze Member
             @else
                 Member Biasa
@@ -35,6 +35,12 @@
                     <div class="col-md-3" style="text-align: left; padding-left: 20px;">2.500.000,00</div>
                     <div class="col-md-3" style="text-align: left; padding-left: 24px;">4.500.000,00</div>
                     <div class="col-md-3" style="text-align: left; padding-left: 24px;">6.500.000,00</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3" style="text-align: left; padding-left: 55px;"><i class="fa fa-caret-down"></i></div>
+                    <div class="col-md-3" style="text-align: left; padding-left: 55px;"><i class="fa fa-caret-down"></i></div>
+                    <div class="col-md-3" style="text-align: left; padding-left: 58px;"><i class="fa fa-caret-down"></i></div>
+                    <div class="col-md-3" style="text-align: left; padding-left: 55px;"><i class="fa fa-caret-down"></i></div>
                 </div>
                 <br>
                 <div class="row">
