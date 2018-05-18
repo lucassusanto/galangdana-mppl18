@@ -21,7 +21,7 @@ Route::get('/user', function () {
     return view('user');
 });
 Route::get('/termgalang', function () {
-    return view('termgalang');
+    return view('term_galang');
 });
 
 Route::get('/galang', function () {
