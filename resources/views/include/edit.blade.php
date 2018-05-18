@@ -29,6 +29,10 @@
     <div class="col-md-12" style="margin-top: 15px">
         <a href="{{ url('/user/'.Auth::user()->id.'/profil') }}"><button type="button" class="btn btn-primary" style="width: 100%">Edit Profil</button></a>
     </div>
+        @else
+    <div class="col-md-12" style="margin-top: 15px">
+        <a href="{{ url('/user/'.$passedUserId.'/profil') }}"><button type="button" class="btn btn-primary" style="width: 100%">Profil</button></a>
+    </div>
     @endif
     @if(Auth::user()['id']==substr(Request::path(),5,1))
      <div class="col-md-12" style="margin-top: 15px">
