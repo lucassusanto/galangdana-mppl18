@@ -18,11 +18,9 @@ class UserController extends Controller
     }
 
     public function edit(user $u){
-//    	$users = User::find($u);
+    	$users = User::findOrFail($u);
 //        dd($users);
-    	$users = DB::table('users')->where('id', $u->id)->get();
-//    	dd($users);
-        return view('user', compact('users'));
+    	return view('user', compact('users'));
     }
 
 	public function update(Request $request, user $u){
